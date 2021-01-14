@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Internationalization</title>
+</head>
+<body>
+
+<label th:text="#{internationalization.lang}"></label>
+<a th:href="@{/internationalization?lang=ro}" th:text="#{internationalization.ro}"></a>
+<a th:href="@{/internationalization?lang=en}" th:text="#{internationalization.en}"></a>
+
+<h1 th:text="#{internationalization.message}"></h1>
+
+<p>Pages:</p>
+<a th:href="@{'/internationalization'}">Internationalization</a>
+<a th:href="@{'/main/page'}">Main Page</a>
+</body>
+</html>
